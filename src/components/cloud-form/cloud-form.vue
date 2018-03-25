@@ -26,8 +26,9 @@ interface saveData {
 })
 
 export default class App extends Vue{
-  @Prop() activeId!: number
+  @Prop() activeId: number
   @Mutation('SAVE_CLOUD') saveCloud:any
+  @Mutation('CLEAR_CLOUD') clearCloud:any
   @Getter('getCloudSettings') cloudSettings:any
   cloudMap = cloudMap
   onSave(data:saveData){
@@ -40,8 +41,14 @@ export default class App extends Vue{
       })
     this.$emit('close')
   }
-  onClear(){
- 
+  onClear(id:number){
+    this.clearCloud(id)
+    this.$notify({
+        type: 'success',
+        title: '已经清除',
+        text: '重设当前云为默认状态！',
+        group:'foo'
+      })
   }
   get tencetnCurrentSet(){
     let id = cloudMap.Tencent.id

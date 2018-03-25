@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <notifications group="foo" />
+    <notifications position="top left" group="foo" />
     <Top-bar @toggleOptionsBtn="toggleOptions" id="top"/>
     <router-view/>
     <options class="options" @close="toggleOptions" :show="displayOptions"/>
@@ -37,7 +37,7 @@ export default class App extends Vue {
 
 .vue-notification {
   padding: 10px;
-  margin: 20px 5px 5px;
+  margin: 80px 5px 5px;
 
   font-size: 12px;
 

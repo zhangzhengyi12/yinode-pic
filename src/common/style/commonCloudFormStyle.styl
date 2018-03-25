@@ -13,14 +13,20 @@
       display flex
       align-items center
       cursor pointer
+      outline none
     .clear
       margin-right 20px
       background #fff
       color #666
+      box-shadow 1px 1px 3px #666
+      &:hover
+        background #ccc
+        color #fff
     .save
       background #2EA9D3
       border none
       color #fff
+      box-shadow 1px 1px 4px #666
   .item
     display flex
     align-items center
@@ -32,13 +38,20 @@
       display flex
       justify-content flex-end
       margin-right 15px
+    select
+      flex 3.5
+      border-radius 5px
+      border 1px solid #ccc
+      outline none
     input
       flex 3.5
       border-radius 5px
       border 1px solid #ccc
       padding 4px 5px
-      font-size 14px
+      font-size 16px
+      line-height 16px
       color #666
+      text-decoration none
       &:focus
         outline none
         box-shadow 1px 1px 3px #ccc
