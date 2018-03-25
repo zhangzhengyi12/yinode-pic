@@ -1,0 +1,60 @@
+.form
+  padding 10px 0
+  width 100%
+  .btns
+    display flex
+    justify-content flex-end
+    margin-top 20px
+    button
+      border 1px solid #ccc
+      border-radius 5px
+      font-size 16px
+      padding 5px 10px
+      display flex
+      align-items center
+      cursor pointer
+    .clear
+      margin-right 20px
+      background #fff
+      color #666
+    .save
+      background #2EA9D3
+      border none
+      color #fff
+  .item
+    display flex
+    align-items center
+    margin-top 5px
+    .name
+      flex .8
+      font-size 16px
+      color #666
+      display flex
+      justify-content flex-end
+      margin-right 15px
+    input
+      flex 3.5
+      border-radius 5px
+      border 1px solid #ccc
+      padding 4px 5px
+      font-size 14px
+      color #666
+      &:focus
+        outline none
+        box-shadow 1px 1px 3px #ccc
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #ccc; opacity:1; 
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #ccc;opacity:1;
+}
+
+input:-ms-input-placeholder{
+    color: #ccc;opacity:1;
+}
+
+input::-webkit-input-placeholder{
+    color: #ccc;opacity:1;
+}
